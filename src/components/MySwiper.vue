@@ -35,12 +35,12 @@ export default {
   methods: {
     initSwiper() {
       this.mySwiper = new window.Swiper(this.$refs.swiperContainer, {
-        slidesPerView: this.viewCount,
+        slidesPerView: "auto",
         slidesPerGroup: this.slidesPerGroup,
         autoplay: this.autoplay,
         delay: this.interval,
         reverseDirection: this.direction === "right",
-        spaceBetween: 16,
+        spaceBetween: -8,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -53,8 +53,6 @@ export default {
         },
       });
       if (this.viewCount > this.infData.length) {
-        console.log("12");
-        console.log(this.$refs.swiperButtonPrev);
         const prev = this.$refs.swiperButtonPrev;
         const next = this.$refs.swiperButtonNext;
         prev.parentNode.removeChild(prev);
@@ -69,6 +67,11 @@ export default {
 .swiper-container {
   width: 100%;
   height: 100%;
+
+  .swiper-slide {
+    width: auto;
+    height: auto;
+  }
   .swiper-button-prev {
     background-image: url("../assets/Vector.png");
     height: 40px;

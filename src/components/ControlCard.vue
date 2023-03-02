@@ -227,11 +227,13 @@ export default {
   margin: 16px;
   cursor: pointer;
   .control-content {
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     padding: 16px;
-    overflow: hidden;
     .triangle {
       margin: 16px;
       position: absolute;
@@ -297,28 +299,22 @@ export default {
       background: #f0f0f4;
     }
     .control-radio {
-      padding-top: 18px;
+      padding-bottom: 0;
       width: 21px;
       height: 21px;
-    }
-    /deep/.ant-radio {
-      /deep/ .ant-radio-inner {
-        width: 20px;
-        height: 20px;
-      }
     }
   }
 }
 .modal-info-container {
   display: flex;
-  height: 100%;
-  width: 100%;
-  padding: 40px 80px;
+  height: auto;
+  width: 912px;
+  padding: 42px 64px;
   .modal-info-left {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 90px;
+    margin-right: 32px;
     .modal-info-img {
       margin-bottom: 30px;
       width: 300px;

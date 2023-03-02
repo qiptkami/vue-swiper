@@ -9,6 +9,9 @@
       @cancel="onCancel"
       destroyOnClose
       :maskClosable="false"
+      :keyboard="false"
+      cancelText="取消"
+      okText="确认"
     >
       <slot></slot>
     </a-modal>
