@@ -39,7 +39,7 @@ export default {
         autoplay: this.autoplay,
         delay: this.interval,
         reverseDirection: this.direction === "right",
-        spaceBetween: -8,
+        spaceBetween: -16,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
