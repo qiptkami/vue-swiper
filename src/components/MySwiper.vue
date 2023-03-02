@@ -12,7 +12,6 @@
 <script>
 export default {
   props: {
-    viewCount: { type: Number, default: 5 }, //一次显示多少张
     slidesPerGroup: { type: Number, default: 1 }, //每次滚动多少张
     autoplay: { type: Boolean, default: false }, //自动播放
     interval: { type: Number, default: 4000 }, //自动播放间隔时长（ms）
