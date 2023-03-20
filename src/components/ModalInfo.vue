@@ -33,9 +33,11 @@ export default {
     visible: { type: Boolean },
     onOk: { type: Function },
     onCancel: { type: Function },
+    data: {},
   },
   data() {
     return {
+      infoData: {},
       confirmLoading: false,
     };
   },

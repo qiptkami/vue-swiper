@@ -58,6 +58,12 @@ export default {
         next.parentNode.removeChild(next);
       }
     },
+    toLeft() {
+      document.getElementById("pageTest").scrollLeft -= 40;
+    },
+    toRight() {
+      document.getElementById("pageTest").scrollLeft += 40;
+    },
   },
 };
 </script>
