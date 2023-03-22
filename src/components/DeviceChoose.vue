@@ -38,22 +38,13 @@
       :onCancel="handleCancel"
       :data="data"
     >
-      <div class="modal-info-header" id="pageTest">
-        <div
-          :key="item.id"
-          v-for="item in data"
-          class="modal-info-header-item modal-info-header-item-hover"
-        >
-          {{ item.name }}
-        </div>
-      </div>
-
       <my-swiper
         v-slot="slotProps"
         :viewCount="1"
         :slidesPerGroup="1"
         :data="data"
         :clickId="clickId"
+        :pagination="true"
       >
         <div class="modal-info-container">
           <div class="modal-info-left">
@@ -227,19 +218,7 @@ export default {
     }
   }
 }
-.modal-info-header {
-  display: flex;
-  margin-bottom: 66px;
-  border-radius: 24px;
-  background: #f0f0f4;
-  overflow-x: auto;
-  margin: 10px 12px 60px 12px;
-  overflow: hidden;
-  .modal-info-header-item {
-    padding: 8px 40px;
-    width: auto;
-  }
-}
+
 .page-prev {
   content: "<";
   position: absolute;
